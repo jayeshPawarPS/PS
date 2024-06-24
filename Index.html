@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Service Management Ticket Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Jira Ticket</h1>
+        <form id="ticketForm">
+            <label for="summary">Summary:</label>
+            <input type="text" id="summary" name="summary" required><br><br>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+            
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
