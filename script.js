@@ -12,7 +12,7 @@ document.getElementById('ticketForm').addEventListener('submit', async function(
     resultDiv.innerText = '';
 
     try {
-        const response = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent('https://parksmart-interns.atlassian.net/rest/api/3/issue'), {
+        const response = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://parksmart-interns.atlassian.net/rest/api/3/issue'), {
             method: 'POST',
             headers: {
                 'Authorization': 'Basic ' + btoa('jayesh.pawar@parksmart.in:ATATT3xFfGF0DZl_0h_m48zajpF37igDzXVTDebGl26aT70YOnUNH6BKXYKPfwDmVPG4GPAxlNUKropOCh9JKiuh3yiVXI7ORG5-KdmQbxEExlnE4CKDQxjdoHTRhpAI9mI905GZutPkyiEJxrXOBSBX-CwRv6fC0EB6aNdGcdtgbm99beoFIMw=FA74DBC5'),
@@ -49,3 +49,4 @@ document.getElementById('ticketForm').addEventListener('submit', async function(
     submitBtn.disabled = false;
     submitBtn.innerText = 'Submit';
 });
+
